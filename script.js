@@ -19,3 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault(); 
+  alert("Your message has been sent!");
+  this.reset(); 
+});
